@@ -1,0 +1,29 @@
+[sys]
+
+host=192.168.10.30
+port=12306
+
+#-1: 文件不带时间戳
+#>=0: 看N小时之前的数据
+hoursAgo = 2
+
+#一般key都会带时间戳，如果不带，key后面只给具体的key即可
+objectList = your_obj1,your_obj2
+[your_obj1]
+your_key1=your_key1_dm303ScanerTime
+your_key2=your_key2_dm303ScanerTime
+[your_obj2]
+your_key1=your_key1_dm303ScanerTime
+your_key2=your_key2_dm303ScanerTime
+
+
+
+[email]
+#发报告: 1, 不发: 0
+sendEmail=1
+server=mail.xxxxxxxx.cn
+user=report@xxxxxxxx.cn
+password=99b5aa85
+fromAddr=report@xxxxxxxx.cn
+toAddr=shijingmeng@xxxxxxxx.cn
+subject=[QA Dm303Scaner] Dm303Scaner
